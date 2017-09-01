@@ -1,0 +1,14 @@
+8/29 questions
+
+1. why isn't there a default template (global file) showing in the localhost:3000
+ view? Why can't I get back to the landing page when I click the logo in 
+ the nav bar? 
+
+2. why do I have both landing and index pages? Check file structure (see
+ ckpoint 2 or 3).
+
+Collection
+
+.state('collection', {
+          url: '/collection',
+          templateUrl: '/templates/collection.html'
