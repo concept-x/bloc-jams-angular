@@ -7,8 +7,38 @@
 2. why do I have both landing and index pages? Check file structure (see
  ckpoint 2 or 3).
 
-Collection
 
-.state('collection', {
-          url: '/collection',
-          templateUrl: '/templates/collection.html'
+Player bar show/hide/click
+
+when Play is clicked, icon should change to Pause
+when Pause is clicked, icon should change to Play
+
+when mouseover any of the buttons, change arrow cursor to hand pointer
+when mouseleave any of the buttons, change hand cursor to arrow
+
+
+
+***create checkpoint 5 branch, make all files in Atom, cut & paste, commit**
+LandingCtrl.js
+app.js
+index.html
+CollectionCtrl.js
+collection.html
+
+CollectionCtrl.js
+
+ 
+
+*****************
+
+LandingCtrl.js
+
+(function() {
+    function LandingCtrl() {
+      this.heroTitle = "Turn the Music Up!"
+    }
+
+    angular
+        .module('blocJams')
+        .controller('LandingCtrl', LandingCtrl);
+})();
