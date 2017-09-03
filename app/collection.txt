@@ -8,37 +8,23 @@
  ckpoint 2 or 3).
 
 
-Player bar show/hide/click
-
-when Play is clicked, icon should change to Pause
-when Pause is clicked, icon should change to Play
-
-when mouseover any of the buttons, change arrow cursor to hand pointer
-when mouseleave any of the buttons, change hand cursor to arrow
-
-
-
 ***create checkpoint 5 branch, make all files in Atom, cut & paste, commit**
-LandingCtrl.js
-app.js
-index.html
-CollectionCtrl.js
-collection.html
 
-CollectionCtrl.js
+Angular Vocab
+ module
+ service
+ inject
+ dependency
+ constructor
+ controller
+ method
+ $scope (why is it there so many times?)
 
+-need basic syntax explanation
+
+http://www.learn-angular.org/#!/lessons/the-constant-recipe didn't make sense
+ b/c there is no indicator of 'constant' anywhere in the final code that runs
+ as provided by the "I'm stuck" button.
  
-
 *****************
 
-LandingCtrl.js
-
-(function() {
-    function LandingCtrl() {
-      this.heroTitle = "Turn the Music Up!"
-    }
-
-    angular
-        .module('blocJams')
-        .controller('LandingCtrl', LandingCtrl);
-})();

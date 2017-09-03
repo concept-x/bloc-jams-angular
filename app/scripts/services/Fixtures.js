@@ -35,11 +35,30 @@
         Fixtures.getAlbum = function() {
             return albumPicasso;
         };
-
+//assignment 6
+        Fixtures.getCollection = function(numberOfAlbums){
+          var albumCollection = [];
+          for (var i=0; i<numberOfAlbums; i++){
+            albumCollection.push(angular.copy(albumPicasso));
+          }
+          return albumCollection;
+        };
+  //end assignment 6
         return Fixtures;
-    }
+    }//Why are we returning two things here? Seems redundant.
 
     angular
         .module('blocJams')
         .factory('Fixtures', Fixtures);
 })();
+
+/*
+Add a second public method to the Fixtures service named getCollection.
+This method should take one argument, numberOfAlbums, and return an array with the specified number of albumPicasso objects pushed to it.
+Inject the Fixtures service into CollectionCtrl.
+
+Fixtures.getCollection = function(numberOfAlbums){
+  var numberOfAlbums = $scope
+  //return array with the specified number of albumPicasso objects pushed to it
+}
+*/
