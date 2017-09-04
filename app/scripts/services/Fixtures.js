@@ -1,3 +1,4 @@
+//Fixtures is a service
 (function() {
     function Fixtures() {
         var Fixtures = {};

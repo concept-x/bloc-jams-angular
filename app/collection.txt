@@ -1,19 +1,14 @@
-8/29 questions
-
-1. why isn't there a default template (global file) showing in the localhost:3000
- view? Why can't I get back to the landing page when I click the logo in 
- the nav bar? 
-
-2. why do I have both landing and index pages? Check file structure (see
- ckpoint 2 or 3).
+9/5 questions
 
 
 ***create checkpoint 5 branch, make all files in Atom, cut & paste, commit**
+//this didn't work at all
 
 Angular Vocab
  module
  service
- inject
+ inject: ? insert into parens @ beginning of function like JS parameter?
+  *Also to insert in angular module as item in array of dependencies?
  dependency
  constructor
  controller
