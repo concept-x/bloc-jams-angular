@@ -4,6 +4,7 @@
     //inject 'Fixtures' & 'SongPlayer' custom services
     this.albumData = Fixtures.getAlbum();
     //AlbumCtrl uses Fixtures' getAlbum() method to get albumPicasso object
+    this.songPlayer = SongPlayer;
   }
 
 angular
