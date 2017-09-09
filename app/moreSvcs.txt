@@ -1,0 +1,7 @@
+Player Bar (ckpoint 8)
+
+"change the private attribute currentSong into a public attribute named 
+ SongPlayer.currentSong so that we can use it within the player bar"
+--public? Private? similar to global/local? Unclear how to tell which is 
+ which in SongPlayer.js controller since everything is legit inside one 
+ function.
