@@ -45,8 +45,9 @@
            //add 'play' method to SongPlayer; 'play' takes 'song' argument
            if(currentSong !== song){
            setSong(song);
-           currentBuzzObject.play(); //Function call?
-           song.playing = true;
+           playSong(song);//replace two lines below with playSong function
+           //currentBuzzObject.play();
+           //song.playing = true;
            } else if(currentSong === song){
              if(currentBuzzObject.isPaused()){
                playSong(song);
