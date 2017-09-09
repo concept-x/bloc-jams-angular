@@ -28,6 +28,19 @@
            currentSong = song;
          };
 
+         /*
+          * @function playSong
+          * @desc Plays the currentBuzzObject and sets the property of the song Object to true
+          * @param {Object} song
+          */
+          var playSong = function(song){
+              currentBuzzObject.play();
+              song.playing = true;
+              }
+        /*
+         * @function SongPlayer.play
+         * @desc Plays currentSong from either none playing or paused
+         */
          SongPlayer.play = function(song){
            //add 'play' method to SongPlayer; 'play' takes 'song' argument
            if(currentSong !== song){
@@ -42,11 +55,14 @@
            }
          };
 
-         //cp 7 call pause when clicked
+    /*
+     * @function SongPlayer.pause
+     * @desc Pauses playing currentBuzzObject when clicked
+     */
      SongPlayer.pause = function(song){
      currentBuzzObject.pause();
      song.playing = false;
-   };//?*****correct placement??
+   };
          return SongPlayer;
     }
 
