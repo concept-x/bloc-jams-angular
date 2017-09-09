@@ -6,13 +6,15 @@
 
 Angular Vocab
  module
- service
- inject: ? insert into parens @ beginning of function like JS parameter?
-  *Also to insert in angular module as item in array of dependencies?
- dependency
- constructor
- controller
- method
+ service: does the actual work of fulfilling user request
+ inject: insert into parens @ beginning of function like JS parameter
+  *Also to insert in angular module as item in array of dependencies
+	way of passing in dependencies as arguments
+ dependency: something required for getting work done
+ constructor: function that creates object...not best practice
+ controller: listens to user requests; sends instructions to service
+ method: line 36 & 40 in fixtures.js. Method = function that lives on object
+  as property/value
  $scope (why is it there so many times?)
 
 -need basic syntax explanation

@@ -1,7 +1,7 @@
 //Fixtures is a service
 (function() {
     function Fixtures() {
-        var Fixtures = {};
+        var Obj = {};
 
         var albumPicasso = {
           title: 'The Colors',
@@ -33,11 +33,11 @@
           ]
         };
 
-        Fixtures.getAlbum = function() {
+        Obj.getAlbum = function() {
             return albumPicasso;
         };
 //assignment 6
-        Fixtures.getCollection = function(numberOfAlbums){
+        Obj.getCollection = function(numberOfAlbums){
           var albumCollection = [];
           for (var i=0; i<numberOfAlbums; i++){
             albumCollection.push(angular.copy(albumPicasso));
@@ -45,8 +45,8 @@
           return albumCollection;
         };
   //end assignment 6
-        return Fixtures;
-    }//Why are we returning two things here? Seems redundant.
+        return Obj;
+    }//return Obj in order to return both getAlbum and getCollection values
 
     angular
         .module('blocJams')
