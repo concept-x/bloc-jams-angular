@@ -107,8 +107,9 @@
      currentSongIndex--;
 
      if(currentSongIndex < 0){
-       currentBuzzObject.stop();
-       SongPlayer.currentSong.playing = null;
+       stopSong();
+       //currentBuzzObject.stop();
+       //SongPlayer.currentSong.playing = null;
      } else {
         var song = currentAlbum.songs[currentSongIndex];
         setSong(song);
@@ -125,8 +126,9 @@
      currentSongIndex++;
 
      if(currentSongIndex > currentAlbum.songs.length){// if (cSI > ?) or, if (cSI = currentAlbum.length -1)?
-       currentBuzzObject.stop();
-       SongPlayer.currentSong.playing = null;
+       stopSong();
+       //currentBuzzObject.stop();
+       //SongPlayer.currentSong.playing = null;
      } else {
         var song = currentAlbum.songs[currentSongIndex];
         setSong(song);
