@@ -19,7 +19,7 @@
              </a>
          </div>
          <div class="control-group currently-playing">
-             <h2 class="song-name" ng-show="playerBar.songPlayer.currentSong.playing">{{album.albumData.song-item-number}}</h2>
+             <h2 class="song-name">{{playerBar.songPlayer.currentSong.title}}</h2>
         <!--song-name populating as 0, not grabbing info dynamically-->
              <h2 class="artist-song-mobile">{{mobile-view}}</h2>
              <!--what goes here?-->
@@ -30,8 +30,8 @@
                      <div class="thumb"></div>
                  </div>
                  <div class="current-time"></div>
-                 <div class="total-time">{{album.albumData.song-item-duration}}</div>
-                 <!--total song duration also not happening-->
+                 <div class="total-time">{{playerBar.songPlayer.currentSong.duration}}</div>
+                 <!--how did we derive this syntax?-->
              </div>
          </div>
          <div class="control-group volume">
