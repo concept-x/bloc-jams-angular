@@ -56,7 +56,7 @@
            * @function getSongIndex
            * @desc Returns current song index
            * @param {Object} song
-           * @returns song index
+           * @returns number (songIndex)
            */
           var getSongIndex = function(song){
               return currentAlbum.songs.indexOf(song);

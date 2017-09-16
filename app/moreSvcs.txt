@@ -5,3 +5,27 @@ Player Bar (ckpoint 8)
 --public? Private? similar to global/local? Unclear how to tell which is 
  which in SongPlayer.js controller since everything is legit inside one 
  function.
+
+
+--don't get syntax of {{this stuff}} in player_bar.html
+
+--wtf private/public functions/attributes?? Finding stuff about Python and 
+ TypeScript, neither of which are relevant.
+**anything created w/var inside SongPlayer fn is private(not accessible to
+ outside modules/functions)...anything attached to whatever you're returning
+ (in this case, SongPlayer obj) is public. SongPlayer.next, .prev, .pause
+ are all public. SetSong and playSong are private; only called within other
+ fns. Attributes = anything attached to object; property.
+
+
+CP 9:
+Declaring an empty scope property ensures that a new scope will exist 
+ solely for the directive (referred to as isolate-scope). An isolate-scope 
+ allows us to bind functions from the directive's view to its scope. ????
+
+Kyle Simpson -- books on github..."getify"...courses on FrontEndMasters.com
+ and Lynda.
+
+Eloquent JS -- book avail. online
+
+Stay away: Douglas Crawford "JS: The Good Parts"
