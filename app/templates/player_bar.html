@@ -25,9 +25,9 @@
              <h3 class="artist-name">{{album.albumData.artist}}</h3>
              <div class="seek-control">
                <seek-bar value="{{ playerBar.songPlayer.currentTime }}" max="{{ playerBar.songPlayer.currentSong.duration }}" on-change="playerBar.songPlayer.setCurrentTime(value)"></seek-bar><!--directive-->
-                 <div class="current-time">{{playerBar.songPlayer.currentTime}}</div>
+                 <div class="current-time">{{playerBar.songPlayer.currentTime | timecode }}</div>
                           <!--I GOT THIS MYSELF!!!!  ^^^^ -->
-                 <div class="total-time">{{playerBar.songPlayer.currentSong.duration}}</div>
+                 <div class="total-time">{{playerBar.songPlayer.currentSong.duration | timecode }}</div>
                  <!--how did we derive this syntax?-->
              </div>
          </div>
