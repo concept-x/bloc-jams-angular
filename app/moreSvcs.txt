@@ -28,4 +28,14 @@ Kyle Simpson -- books on github..."getify"...courses on FrontEndMasters.com
 
 Eloquent JS -- book avail. online
 
+https://www.destroyallsoftware.com/talks/wat
+
+"js: understanding the weird parts"
+
 Stay away: Douglas Crawford "JS: The Good Parts"
+
+***********
+
+Assignment 10
+
+-does #3 refer to seekBar.js lines 65-69, or SongPlayer.js lines 157-163?

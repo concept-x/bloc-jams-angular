@@ -20,20 +20,20 @@
          </div>
          <div class="control-group currently-playing">
              <h2 class="song-name">{{playerBar.songPlayer.currentSong.title}}</h2>
-        <!--song-name populating as 0, not grabbing info dynamically-->
              <h2 class="artist-song-mobile">{{mobile-view}}</h2>
-             <!--what goes here?-->
+                                <!--what goes here?-->
              <h3 class="artist-name">{{album.albumData.artist}}</h3>
              <div class="seek-control">
                <seek-bar value="{{ playerBar.songPlayer.currentTime }}" max="{{ playerBar.songPlayer.currentSong.duration }}" on-change="playerBar.songPlayer.setCurrentTime(value)"></seek-bar><!--directive-->
-                 <div class="current-time"></div>
+                 <div class="current-time">{{playerBar.songPlayer.currentTime}}</div>
+                          <!--I GOT THIS MYSELF!!!!  ^^^^ -->
                  <div class="total-time">{{playerBar.songPlayer.currentSong.duration}}</div>
                  <!--how did we derive this syntax?-->
              </div>
          </div>
          <div class="control-group volume">
              <span class="icon ion-volume-high"></span>
-             <seek-bar></seek-bar>
+             <seek-bar value="{{ playerBar.songPlayer.volume }}" max=100 on-change="playerBar.songPlayer.setVolume(value)"></seek-bar>
          </div>
      </div>
  </section>
