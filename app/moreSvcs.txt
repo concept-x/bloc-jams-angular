@@ -15,7 +15,7 @@ Player Bar (ckpoint 8)
  outside modules/functions)...anything attached to whatever you're returning
  (in this case, SongPlayer obj) is public. SongPlayer.next, .prev, .pause
  are all public. SetSong and playSong are private; only called within other
- fns. Attributes = anything attached to object; property.
+ fns. Attributes = anything attached to object; properties.
 
 
 CP 9:
@@ -36,6 +36,8 @@ Stay away: Douglas Crawford "JS: The Good Parts"
 
 ***********
 
-Assignment 10
+2:41, 1:43, 4.28, 2:33, 6:14
+********
 
--does #3 refer to seekBar.js lines 65-69, or SongPlayer.js lines 157-163?
+ion-volume-mute...change volume class to volume-mute; modify play/pause for volume;
+ "mute" function = sets vol to  null or 0 (does it matter?)
