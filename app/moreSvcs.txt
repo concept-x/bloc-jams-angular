@@ -36,8 +36,28 @@ Stay away: Douglas Crawford "JS: The Good Parts"
 
 ***********
 
-
+2:41, 1:43, 4.28, 2:33, 6:14
 ********
 
 ion-volume-mute...change volume class to volume-mute; modify play/pause for volume;
  "mute" function = sets vol to  null or 0 (does it matter?)
+
+SongPlayer.mute = function(volume) {
+                    
+ if (currentBuzzObject) {
+                        
+  currentBuzzObject.mute(volume);
+                    
+}
+                
+};
+
+<span class="icon ion-volume-high"></span>
+             
+<span class="icon ion-volume-mute"
+               
+ng-show="playerBar.SongPlayer.currentSong.playing"
+               
+ng-click="playerBar.songPlayer.mute()">
+             
+</span>

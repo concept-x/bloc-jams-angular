@@ -48,6 +48,7 @@
            SongPlayer.currentSong = song;
          };
 
+         SongPlayer.muted = false;
          /*
           * @function playSong
           * @desc Plays the currentBuzzObject and sets the property of the song Object to true
@@ -170,10 +171,19 @@
   * @param {Number} volume
   */
   SongPlayer.setVolume = function(volume) {
-    if (currentBuzzObject) {
+    if (currentBuzzObject) {//if currentBuzzObject != null
       currentBuzzObject.setVolume(volume);
+      if (volume > 0){
+        SongPlayer.muted = false;
+      } else {
+        SongPlayer.muted = true;
+      };
+
+
        }
   };
+
+  //pass in 0 for mute; pass in default vol for unmute
          return SongPlayer;
     }
 
