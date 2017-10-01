@@ -1,4 +1,5 @@
 //Fixtures is a service
+//Services retrieve data, send data, manipulate data for us
 (function() {
     function Fixtures() {
         var Obj = {};
