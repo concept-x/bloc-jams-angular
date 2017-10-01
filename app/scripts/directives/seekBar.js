@@ -62,16 +62,17 @@
               });
             });
 
-          var notifyOnChange = function(value) {
-            if (typeof scope.onChange === 'function') {
-              scope.onChange({value: newValue});
-            }
-          };
 
             $document.bind('mouseup.thumb', function() {
               $document.unbind('mousemove.thumb');
               $document.unbind('mouseup.thumb');
             });
+          };
+          //moved notifyOnChange out of scope.trackThumb function to make it avail. to all functions
+          var notifyOnChange = function(value) {
+            if (typeof scope.onChange === 'function') {
+              scope.onChange({value: value});
+            }
           };
 
         }
