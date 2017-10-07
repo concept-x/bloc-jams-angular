@@ -36,8 +36,18 @@ Stay away: Douglas Crawford "JS: The Good Parts"
 
 ***********
 
+<<<<<<< HEAD
 ********
 
 --Assignment: comment every line changed in recent commit per Carrie,
   commit again. See git bash 'git diff' for lines to comment.
 
+=======
+2:41, 1:43, 4.28, 2:33, 6:14
+********
+
+--Assignment: comment every line changed in recent commit per Carrie,
+  commit again. See git bash 'git diff' for lines to comment.
+--implement filter timecode to make mins:secs show up in song list
+--contact form on portfolio site f'd up because of plugin issues.
+>>>>>>> angular-xtra-credit
